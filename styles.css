@@ -1,0 +1,26 @@
+h1 {
+    color: lightseagreen;
+    padding: 10px;
+}
+
+
+button {
+    border: 1px solid #939696; /*anchura, estilo y color borde*/
+    padding: 10px; /*espacio alrededor texto*/
+    background-color: #29a38f; /*color botón*/
+    color: #eeeaea; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+}
+
+#ajusteFijo {
+    border: 1px solid #939696;
+    padding: 10px;
+    font-size: 14px;
+    font-family: 'Helvetica', sans-serif;
+    background-color: #29a38f;
+    color: #eeeaea;
+    
+}
+

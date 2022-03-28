@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='./styles.css'>
+    <title>Document</title>
+
+    <!-- LINK TOASTIFY -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- Link HANDS ON TABLE -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/handsontable/dist/handsontable.full.min.css" />
+    <!-- Link BOOSTRAP 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+
+</head>
+<body>
+
+
+    <div class="container">     
+        <div class="row">
+          
+            <div class="col-6">
+            <div class="row">
+              
+                <div class="col-12">
+                <h1>Entrada de datos</h1>
+                <div id="dataTable" border="1" style="margin: 0 auto;"></div>
+                <button id="boton">Graficar</button>
+                <button id="cargar_api">Cargar API</button>
+                <button id="guardar">Guardar</button>
+                <button id="limpiar">Limpiar</button>
+
+
+                <br>   
+    
+
+              </div>
+
+              <div class="col-12">
+                <h1>Editor</h1>
+
+                <div class="input-group mb-3" >
+                    <span id="ajusteFijo" class="input-group-text" style="width: 200px">Ajuste Fijo  </span>
+                    <div class="input-group-text" >
+                      <input class="form-check-input mt-0" type="checkbox" id="check_ajuste_fijo">
+                    </div>
+                    <input type="number" class="form-control" id="value_ajuste_fijo">
+                  </div>
+
+                  <div class="input-group mb-3" >
+                    <span id="ajusteFijo" class="input-group-text" style="width: 200px">Ajuste Porcentual</span>
+                    <div class="input-group-text" >
+                      <input class="form-check-input mt-0" type="checkbox" id="check_ajuste_porcentual">
+                    </div>
+                    <input type="number" class="form-control" id="value_ajuste_porcentual">
+                  </div>
+
+                  <button id="exportar">Exportar Excel</button>
+
+
+              </div>
+
+            </div>
+            </div>
+
+            <div class="col-6">
+            <div class="row">
+                <div class="col-12">
+                <h1>Grafico</h1>
+                <div id="grafico" style="width:600px;height:250px;"></div>                
+                </div>
+            </div>
+            <div class="col-6">
+              <div class="row">
+                  <div class="col-12">
+                  <h1>Tabla</h1>
+                  
+                  <table style="text-align:center" class="table" id="tableValues">
+                    <thead>
+                      <tr>
+                        <th scope="col">Time</th>
+                        <th scope="col">Values</th>
+                        <th scope="col">Values Ajusted</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+            
+                    </tbody>
+                  </table>              
+                
+                  </div>
+              </div>
+        </div>
+      </div>
+    
+
+
+    <!-- Script TOASTIFY  -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- Script PLOTLY  -->
+    <script src="https://cdn.plot.ly/plotly-2.9.0.min.js"></script>
+    <!-- Script HANDS ON TABLE -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/handsontable/dist/handsontable.full.min.js"></script>
+    <!-- Script BOOSTRAP 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- Script DANFO -->
+    <script src="https://cdn.jsdelivr.net/npm/danfojs@1.0.2/lib/bundle.min.js"></script>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
