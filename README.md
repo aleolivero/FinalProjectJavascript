@@ -10,6 +10,7 @@ Se utilizo diferentes librerias tales como:
 * Plotly
 * Hands On Table
 * Danfo
+* Boostrap
 
 En la codificacion en Javascript se aplico:
 * Clases y Objetos
@@ -24,3 +25,12 @@ En la codificacion en Javascript se aplico:
 * Storage y JSON
 * Operadores Avanzandos (Ternario, Operador Logico AND, Desestructuracion de objetos, Rest Parameters)
 * Fetch
+
+En la codificacion en CSS se crearon estilos para botones, etiquetas, etc.
+
+En la codificacion en HTML se hizo uso de:
+* Buttons
+* Tables
+* Inputs
+* Checkboxes
+
